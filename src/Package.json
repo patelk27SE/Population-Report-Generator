@@ -1,19 +1,14 @@
 {
-  "name": "population-report-generator",
+  "name": "population-reporting-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.mjs"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2",
     "mongoose": "^8.5.2"
   },
   "devDependencies": {},
-  "keywords": []
+  "keywords": [],
   "type": "module"
 }
