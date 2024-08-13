@@ -15,4 +15,5 @@
   },
   "devDependencies": {},
   "keywords": []
+  "type": "module"
 }
