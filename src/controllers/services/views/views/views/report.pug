@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title Population Reports
+    body
+        h1 Population Reports
+        table
+            thead
+                tr
+                    th Country
+                    th Population
+                    th Year
+            tbody
+                each report in reports
+                    tr
+                        td= report.country
+                        td= report.population
+                        td= report.year
+
+        h2 Add New Report
+        form(action='/report', method='post')
+            div
+                label(for='country') Country:
+                input(type='text', id='country', name='country', required)
+            div
+                label(for='population') Population:
+                input(type='number', id='population', name='population', required)
+            div
+                label(for='year') Year:
+                input(type='number', id='year', name='year', required)
+            button(type='submit') Add Report
